@@ -7,8 +7,8 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Walking
-  m_Speed: 1
+  m_Name: Moving
+  m_Speed: 0.25
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -925631483569343348}
@@ -101,13 +101,13 @@ AnimatorController:
   m_Name: AnimatorController
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: pos_x
+  - m_Name: input_x
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: pos_y
+  - m_Name: input_y
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -172,8 +172,8 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
-  m_BlendParameter: pos_x
-  m_BlendParameterY: pos_y
+  m_BlendParameter: input_x
+  m_BlendParameterY: input_y
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
@@ -187,7 +187,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Idle
-  m_Speed: 1
+  m_Speed: 0.25
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -4795847379816953438}
@@ -246,8 +246,8 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: pos_x
     m_Mirror: 0
-  m_BlendParameter: pos_x
-  m_BlendParameterY: pos_y
+  m_BlendParameter: input_x
+  m_BlendParameterY: input_y
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
