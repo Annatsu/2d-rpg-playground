@@ -2,13 +2,21 @@ using System;
 using UnityEngine;
 
 [Serializable]
-public class Entity
+public class Entity : MonoBehaviour
 {
+
+    public enum EntityState
+    {
+        IDLE,
+        MOVING,
+        ATTACKING
+    };
 
     [Header("General")]
     public string Name;
     public string Job;
     public int Level;
+    public EntityState ActiveEntityState;
 
     [Header("Attributes")]
     public int Strength;
@@ -20,8 +28,8 @@ public class Entity
 
     [Header("Stats")]
     public int MaxHP;
-    public int CurrentHP;
     public int MaxMP;
-    public int CurrentMP;
+    protected int CurrentHP;
+    protected int CurrentMP;
 
 }
